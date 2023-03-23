@@ -185,4 +185,8 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
     font-size: clamp(0.66rem, 0.63rem + 0.14vw, 0.75rem);
     font-weight: 500;
   }
+}
+.home_hero {
+  height: 100vh;
+  background-image: url(../images/JCNP\ Quantity\ Surveyor_Home\ Banner.jpg);
 }/*# sourceMappingURL=style.css.map */
