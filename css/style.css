@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
+
+/*
+Fluid Typography Scale
+Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+*/
+.primary_button {
+  background-color: transparent;
+  border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  border-color: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.primary_button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #BB0722;
+  height: 180%;
+  width: 100%;
+  z-index: -10;
+  transition: all ease-in-out 0.5s;
+}
+.primary_button a {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all ease-in-out 0.5s;
+}
+.primary_button:hover {
+  border: 1px solid #BB0722;
+}
+.primary_button:hover a {
+  color: #BB0722;
+}
+.primary_button:hover:after {
+  height: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.secondary_button {
+  background-color: transparent;
+  border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  border-color: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.secondary_button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #130C0C;
+  height: 180%;
+  width: 100%;
+  z-index: -10;
+  transition: all ease-in-out 0.5s;
+  margin: 0;
+  padding: 0;
+}
+.secondary_button a {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all ease-in-out 0.5s;
+}
+.secondary_button:hover {
+  border: 1px solid #130C0C;
+}
+.secondary_button:hover a {
+  color: #130C0C;
+}
+.secondary_button:hover:after {
+  height: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.primary_button_outline {
+  background-color: transparent;
+  border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  border: solid 1px #BB0722;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.primary_button_outline:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #BB0722;
+  height: 0;
+  width: 100%;
+  z-index: -10;
+  transition: all ease-in-out 0.5s;
+  margin: 0;
+  padding: 0;
+}
+.primary_button_outline a {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  text-transform: uppercase;
+  color: #BB0722;
+  transition: all ease-in-out 0.5s;
+}
+.primary_button_outline:hover {
+  border: 1px solid #BB0722;
+}
+.primary_button_outline:hover a {
+  color: #FFFFFF;
+}
+.primary_button_outline:hover:after {
+  height: 180%;
+  border-radius: 0 0 50% 50%;
+}
+
+.secondary_button_outline {
+  background-color: transparent;
+  border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  border: solid 1px #130C0C;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.secondary_button_outline:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #130C0C;
+  height: 0;
+  width: 100%;
+  z-index: -10;
+  transition: all ease-in-out 0.5s;
+  margin: 0;
+  padding: 0;
+}
+.secondary_button_outline a {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  text-transform: uppercase;
+  color: #130C0C;
+  transition: all ease-in-out 0.5s;
+}
+.secondary_button_outline:hover {
+  border: 1px solid #130C0C;
+}
+.secondary_button_outline:hover a {
+  color: #FFFFFF;
+}
+.secondary_button_outline:hover:after {
+  height: 180%;
+  border-radius: 0 0 50% 50%;
+}
+
+@media screen and (max-width: 400px) {
+  .primary_button, .secondary_button, .primary_button_outline, .secondary_button_outline {
+    border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+    padding: clamp(0.69rem, 0.67rem + 0.09vw, 0.75rem) clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  }
+  .primary_button a, .secondary_button a, .primary_button_outline a, .secondary_button_outline a {
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(0.66rem, 0.63rem + 0.14vw, 0.75rem);
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=style.css.map */
