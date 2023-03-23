@@ -27,7 +27,7 @@
     &:hover{
         border: 1px solid $primary_colour;
         a{
-            color: $primary_colour;
+            color: $primary_colour !important;
         }
         &:after{
             height: 0;
@@ -90,9 +90,9 @@
     &:after{
         content: "";
         position: absolute;
+        border: transparent;
         top: 0;
         left: 0;
-        background-color: $primary_colour;
         height: 0;
         width: 100%;
         z-index: -10;
@@ -109,12 +109,15 @@
     }
     &:hover{
         border: 1px solid $primary_colour;
+        
         a{
             color: $white_colour;
         }
         &:after{
             height: 180%;
             border-radius: 0 0 50% 50%;
+            background-color: $primary_colour;
+            
         }
         
     }
@@ -157,6 +160,7 @@
         &:after{
             height: 180%;
             border-radius: 0 0 50% 50%;
+            background-color: $secondary_colour;
         }
         
     }
@@ -166,7 +170,7 @@
 
 
 
-//Media Queries 
+// Media Queries 
 
 @media screen and (max-width: 400px){
    

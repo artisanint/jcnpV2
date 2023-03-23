@@ -16,7 +16,7 @@
 @import './Variables/variables';
 @import './Variables/typography';
 //Importing Components
-@import './components/buttons';
+
 @import './components/header';
 @import './components/footer';
 //Importing Page Styles
@@ -25,6 +25,7 @@
 @import './page_styles/blog';
 @import './page_styles/services';
 @import './page_styles/contact';
+@import './components/buttons';
 
 
 
