@@ -10,12 +10,19 @@
    *a{
     text-decoration: none;
    }
+
+
 //Imporing Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@300;400;500&display=swap');
 //Importing Variables and resets
 @import './Variables/variables';
 @import './Variables/typography';
 //Importing Components
+
+.container{
+    max-width: 1440px;
+    padding: 0 $space_xl_48;
+   }
 
 @import './components/header';
 @import './components/footer';
