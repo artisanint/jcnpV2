@@ -14,7 +14,7 @@
         background-color: $primary_colour;
         height: 180%;
         width: 100%;
-        z-index: -10;
+        // z-index: -1;
         transition: all ease-in-out .5s;
         
         // transform: translateY(-100%)
@@ -23,6 +23,8 @@
         @include button_text($alt_font);
         color: $white_colour;
         transition: all ease-in-out .5s;
+        position: relative;
+        z-index: 10;
     }
     &:hover{
         border: 1px solid $primary_colour;
@@ -54,7 +56,7 @@
         background-color: $secondary_colour;
         height: 180%;
         width: 100%;
-        z-index: -10;
+        // z-index: -1;
         transition: all ease-in-out .5s;
         margin: 0;
         padding: 0;
@@ -64,7 +66,9 @@
     a{
         @include button_text($alt_font);
         color: $white_colour;
-        transition: all ease-in-out .5s;
+        transition: all ease-in-out .5s;position: relative;
+        z-index: 10;
+
     }
     &:hover{
         border: 1px solid $secondary_colour;
@@ -95,7 +99,7 @@
         left: 0;
         height: 0;
         width: 100%;
-        z-index: -10;
+        // z-index: -1;
         transition: all ease-in-out .5s;
         margin: 0;
         padding: 0;
@@ -106,6 +110,8 @@
         @include button_text($alt_font);
         color: $primary_colour;
         transition: all ease-in-out .5s;
+        position: relative;
+        z-index: 10;
     }
     &:hover{
         border: 1px solid $primary_colour;
@@ -140,7 +146,7 @@
         background-color: $secondary_colour;
         height: 0;
         width: 100%;
-        z-index: -10;
+        // z-index: -1;
         transition: all ease-in-out .5s;
         margin: 0;
         padding: 0;
@@ -151,6 +157,8 @@
         @include button_text($alt_font);
         color: $secondary_colour;
         transition: all ease-in-out .5s;
+        position: relative;
+        z-index: 10;
     }
     &:hover{
         border: 1px solid $secondary_colour;

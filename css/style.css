@@ -43,7 +43,6 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   background-color: #BB0722;
   height: 180%;
   width: 100%;
-  z-index: -10;
   transition: all ease-in-out 0.5s;
 }
 .primary_button a {
@@ -52,6 +51,8 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   text-transform: uppercase;
   color: #FFFFFF;
   transition: all ease-in-out 0.5s;
+  position: relative;
+  z-index: 10;
 }
 .primary_button:hover {
   border: 1px solid #BB0722;
@@ -81,7 +82,6 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   background-color: #130C0C;
   height: 180%;
   width: 100%;
-  z-index: -10;
   transition: all ease-in-out 0.5s;
   margin: 0;
   padding: 0;
@@ -92,6 +92,8 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   text-transform: uppercase;
   color: #FFFFFF;
   transition: all ease-in-out 0.5s;
+  position: relative;
+  z-index: 10;
 }
 .secondary_button:hover {
   border: 1px solid #130C0C;
@@ -121,7 +123,6 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   left: 0;
   height: 0;
   width: 100%;
-  z-index: -10;
   transition: all ease-in-out 0.5s;
   margin: 0;
   padding: 0;
@@ -132,6 +133,8 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   text-transform: uppercase;
   color: #BB0722;
   transition: all ease-in-out 0.5s;
+  position: relative;
+  z-index: 10;
 }
 .primary_button_outline:hover {
   border: 1px solid #BB0722;
@@ -162,7 +165,6 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   background-color: #130C0C;
   height: 0;
   width: 100%;
-  z-index: -10;
   transition: all ease-in-out 0.5s;
   margin: 0;
   padding: 0;
@@ -173,6 +175,8 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   text-transform: uppercase;
   color: #130C0C;
   transition: all ease-in-out 0.5s;
+  position: relative;
+  z-index: 10;
 }
 .secondary_button_outline:hover {
   border: 1px solid #130C0C;
