@@ -72,6 +72,26 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   text-align: justify;
 }
 
+.home_about_cards {
+  max-width: 1440px;
+  height: 100vh;
+}
+.home_about_cards .about_home_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  height: auto;
+  width: 100%;
+}
+.home_about_cards .about_home_card .card_heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
+  line-height: 120%;
+  color: #130C0C;
+}
+
 .primary_button {
   background-color: transparent;
   border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
@@ -245,5 +265,10 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
     font-family: "Open Sans", sans-serif;
     font-size: clamp(0.66rem, 0.63rem + 0.14vw, 0.75rem);
     font-weight: 500;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   }
 }/*# sourceMappingURL=style.css.map */

@@ -45,3 +45,22 @@
     }
 
 }
+
+.home_about_cards{
+    max-width: 1440px;
+    height: 100vh;
+    .about_home_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: $space_m_24;
+        height: auto;
+        width: 100%;
+        .card_heading{
+            @include heading_3($main_font, $secondary_colour)
+        }
+    }
+    
+}
+

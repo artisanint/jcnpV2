@@ -37,3 +37,8 @@
 
 
 
+@media screen and (max-width: 480px){
+    .container{
+        padding:  0 $space_m_24;
+    }
+}
