@@ -21,7 +21,9 @@
 
 .container{
     max-width: 1440px;
+    margin: 0 auto;
     padding: 0 $space_xl_48;
+
    }
 
 @import './components/header';
