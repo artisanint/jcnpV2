@@ -73,23 +73,34 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
 }
 
 .home_about_cards {
-  max-width: 1440px;
-  height: 100vh;
+  display: grid;
 }
-.home_about_cards .about_home_card {
+.home_about_cards .home_about_card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
-  height: auto;
-  width: 100%;
+  padding: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  gap: clamp(0.69rem, 0.67rem + 0.09vw, 0.75rem);
+  align-items: flex-start;
+  border-bottom: 1px solid #DDD9D9;
 }
-.home_about_cards .about_home_card .card_heading {
+.home_about_cards .home_about_card .card_heading {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
   line-height: 120%;
-  color: #130C0C;
+  color: #BB0722;
+}
+.home_about_cards .home_about_card .card_text {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
+  line-height: 120%;
+  color: #282828;
+}
+.home_about_cards .card_1 {
+  background-color: #130C0C;
+}
+.home_about_cards .card_1 .card_text {
+  color: #FFFFFF;
 }
 
 .primary_button {

@@ -47,20 +47,29 @@
 }
 
 .home_about_cards{
-    max-width: 1440px;
-    height: 100vh;
-    .about_home_card{
+    display: grid;
+
+    .home_about_card{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        gap: $space_m_24;
-        height: auto;
-        width: 100%;
+        padding: $space_l_32;
+        gap: $space_xs_12;
+        align-items: flex-start;
+       
+        border-bottom: 1px solid $light_colour;
         .card_heading{
-            @include heading_3($main_font, $secondary_colour)
+            @include heading_3($main_font, $primary_colour)
+        }
+        .card_text{
+            @include heading_5($alt_font, $dark_colour)
+        }
+    }
+    .card_1{
+        background-color: $secondary_colour;
+        .card_text{
+            color: $white_colour;
         }
     }
     
 }
-
