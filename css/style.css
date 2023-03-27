@@ -248,6 +248,44 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   font-size: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
 }
 
+/*-------------Clients Section-------------------*/
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-2250px - clamp(2.63rem, 2.5rem + 0.56vw, 3rem)));
+  }
+}
+.home_clients {
+  padding: clamp(3.5rem, 3.33rem + 0.74vw, 4rem) 0;
+}
+.home_clients .home_clients_heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
+  line-height: 120%;
+  color: #130c0c;
+  padding-bottom: clamp(3.5rem, 3.33rem + 0.74vw, 4rem);
+}
+.home_clients .home_clients_marquee {
+  height: 100px;
+  margin: auto;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
+.home_clients .home_clients_marquee .home_clients_marguee_track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  flex-direction: row;
+  gap: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+  width: calc(1800px - clamp(2.63rem, 2.5rem + 0.56vw, 3rem));
+}
+.home_clients .home_clients_marquee .home_clients_marguee_track .marquee_slide {
+  height: 100px;
+  width: 250px;
+}
+
 @media screen and (min-width: 800px) and (max-width: 1020px) {
   .home_about_cards {
     grid-template-columns: repeat(8, 1fr);

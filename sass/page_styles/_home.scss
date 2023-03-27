@@ -214,7 +214,46 @@
 }
 
 
+/*-------------Clients Section-------------------*/
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc((-250px * 9) - $space_xl_48));
+    
+    }
+}
 
+.home_clients{
+    padding: $space_xxl_64 0;
+    .home_clients_heading{
+        @include heading_4($main_font, $secondary_colour);
+        padding-bottom: $space_xxl_64;
+        
+    }
+
+    .home_clients_marquee{
+        height: 100px;
+        margin: auto;
+        width: auto;
+        position: relative;
+        overflow: hidden;
+
+        .home_clients_marguee_track{
+            animation: scroll 40s linear infinite;
+            display: flex;
+            flex-direction: row;
+            gap: $space_xl_48;
+            width: calc((100px * 18 ) - $space_xl_48) ;
+
+            .marquee_slide{
+                height: 100px;
+                width: 250px;
+            }
+        }
+    }
+}
 
 
 
