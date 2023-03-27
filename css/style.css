@@ -175,7 +175,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
   height: 60vh;
   padding: 0 clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
-  background-image: url(/images/The-role-of-the-quantity-surveyor_1.jpg);
+  background-image: url(../images/The-role-of-the-quantity-surveyor_1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -213,7 +213,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
   height: 60vh;
   padding: 0 clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
-  background-image: url(/images/JCNP_home_profile_right.jpg);
+  background-image: url(../images/JCNP_home_profile_right.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
