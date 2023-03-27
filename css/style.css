@@ -63,14 +63,14 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
   line-height: 120%;
-  color: #BB0722;
+  color: #bb0722;
   padding-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
 }
 .home_hero .home_hero_content h1 {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2.18rem, 1.5rem + 3.01vw, 4.21rem);
   line-height: 105%;
-  color: #130C0C;
+  color: #130c0c;
   padding-bottom: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
   text-transform: uppercase;
 }
@@ -84,6 +84,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   text-align: justify;
 }
 
+/*-------------------------HOME ABOUT SECTION---------------------*/
 .home_about_cards {
   display: grid;
   max-width: 1440px;
@@ -102,7 +103,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
   line-height: 120%;
-  color: #BB0722;
+  color: #bb0722;
 }
 .home_about_cards .home_about_card .card_text {
   font-family: "Open Sans", sans-serif;
@@ -112,29 +113,31 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   text-align: justify;
 }
 .home_about_cards .card_1 {
-  background-color: #130C0C;
+  background-color: #130c0c;
   gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
 }
 .home_about_cards .card_1 .card_text {
   color: #FFFFFF;
 }
 
+/*-------------------------HOME SERVICES SECTION---------------------*/
 .home_service {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   padding-top: clamp(3.5rem, 3.33rem + 0.74vw, 4rem);
+  padding-bottom: clamp(3.5rem, 3.33rem + 0.74vw, 4rem);
 }
 .home_service .home_service_container h3 {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
   line-height: 120%;
-  color: #130C0C;
+  color: #130c0c;
   text-transform: uppercase;
   padding-bottom: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
 }
 .home_service .home_service_container .home_service_cards {
   display: grid;
-  gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  gap: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
 }
 .home_service .home_service_container .home_service_cards .home_service_card {
   display: flex;
@@ -149,7 +152,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
   line-height: 120%;
-  color: #BB0722;
+  color: #bb0722;
   max-width: 360px;
 }
 .home_service .home_service_container .home_service_cards .home_service_card .home_service_card_text {
@@ -158,6 +161,91 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   line-height: 145%;
   color: #282828;
   text-align: justify;
+}
+
+/*-------------------------HOME VALUES SECTION---------------------*/
+.home_profile {
+  min-height: 100vh;
+  width: 100%;
+}
+.home_profile .home_profile_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  height: 60vh;
+  padding: 0 clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  background-image: url(/images/The-role-of-the-quantity-surveyor_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.home_profile .home_profile_left .home_profile_left_caption {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  max-width: 320px;
+}
+.home_profile .home_profile_left .home_profile_left_heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
+  line-height: 120%;
+  color: #bb0722;
+}
+.home_profile .home_profile_left .home_profile_left_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #FFFFFF;
+  max-width: 360px;
+}
+.home_profile .home_profile_left .home_profile_cta {
+  display: flex;
+  flex-direction: row;
+}
+.home_profile .home_profile_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  height: 60vh;
+  padding: 0 clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  background-image: url(/images/JCNP_home_profile_right.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.home_profile .home_profile_right .home_profile_right_caption {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.home_profile .home_profile_right .home_profile_right_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #FFFFFF;
+}
+.home_profile .home_profile_right .home_profile_pillars li {
+  display: flex;
+  flex-direction: row;
+  gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  padding-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+.home_profile .home_profile_right .home_profile_pillars li p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.home_profile .home_profile_right .home_profile_pillars li .fa-solid {
+  color: white;
+  font-size: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
 }
 
 @media screen and (min-width: 800px) and (max-width: 1020px) {
@@ -202,8 +290,6 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
-    position: relative;
-    z-index: 20;
   }
   .home_about_cards {
     grid-template-columns: repeat(8, 1fr);
@@ -249,6 +335,19 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   .home_service_cards .service_card_4 {
     grid-column: 3/5;
   }
+  .home_profile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 70vh;
+  }
+  .home_profile .home_profile_left {
+    grid-column: 1/3;
+    padding: 0 clamp(3.5rem, 3.33rem + 0.74vw, 4rem);
+  }
+  .home_profile .home_profile_right {
+    grid-column: 3/5;
+    padding: 0 clamp(3.5rem, 3.33rem + 0.74vw, 4rem);
+  }
 }
 .primary_button {
   background-color: transparent;
@@ -264,7 +363,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #BB0722;
+  background-color: #bb0722;
   height: 180%;
   width: 100%;
   transition: all ease-in-out 0.5s;
@@ -279,10 +378,10 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   z-index: 10;
 }
 .primary_button:hover {
-  border: 1px solid #BB0722;
+  border: 1px solid #bb0722;
 }
 .primary_button:hover a {
-  color: #BB0722 !important;
+  color: #bb0722 !important;
 }
 .primary_button:hover:after {
   height: 0;
@@ -303,7 +402,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #130C0C;
+  background-color: #130c0c;
   height: 180%;
   width: 100%;
   transition: all ease-in-out 0.5s;
@@ -320,10 +419,10 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   z-index: 10;
 }
 .secondary_button:hover {
-  border: 1px solid #130C0C;
+  border: 1px solid #130c0c;
 }
 .secondary_button:hover a {
-  color: #130C0C;
+  color: #130c0c;
 }
 .secondary_button:hover:after {
   height: 0;
@@ -334,7 +433,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   background-color: transparent;
   border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
-  border: solid 1px #BB0722;
+  border: solid 1px #bb0722;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -355,13 +454,13 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   font-family: "Open Sans", sans-serif;
   font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   text-transform: uppercase;
-  color: #BB0722;
+  color: #bb0722;
   transition: all ease-in-out 0.5s;
   position: relative;
   z-index: 10;
 }
 .primary_button_outline:hover {
-  border: 1px solid #BB0722;
+  border: 1px solid #bb0722;
 }
 .primary_button_outline:hover a {
   color: #FFFFFF;
@@ -369,14 +468,14 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
 .primary_button_outline:hover:after {
   height: 180%;
   border-radius: 0 0 50% 50%;
-  background-color: #BB0722;
+  background-color: #bb0722;
 }
 
 .secondary_button_outline {
   background-color: transparent;
   border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
-  border: solid 1px #130C0C;
+  border: solid 1px #130c0c;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -386,7 +485,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #130C0C;
+  background-color: #130c0c;
   height: 0;
   width: 100%;
   transition: all ease-in-out 0.5s;
@@ -397,13 +496,13 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   font-family: "Open Sans", sans-serif;
   font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   text-transform: uppercase;
-  color: #130C0C;
+  color: #130c0c;
   transition: all ease-in-out 0.5s;
   position: relative;
   z-index: 10;
 }
 .secondary_button_outline:hover {
-  border: 1px solid #130C0C;
+  border: 1px solid #130c0c;
 }
 .secondary_button_outline:hover a {
   color: #FFFFFF;
@@ -411,10 +510,10 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
 .secondary_button_outline:hover:after {
   height: 180%;
   border-radius: 0 0 50% 50%;
-  background-color: #130C0C;
+  background-color: #130c0c;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .primary_button, .secondary_button, .primary_button_outline, .secondary_button_outline {
     border-radius: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
     padding: clamp(0.69rem, 0.67rem + 0.09vw, 0.75rem) clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
