@@ -53,12 +53,13 @@
     display: grid;
     // grid-template-columns: repeat(8, 1fr);
     max-width: 1440px;
+    
 
     .home_about_card{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: $space_l_32;
+        padding: $space_xl_48;
         gap: $space_s_16;
         align-items: flex-start;
         background-color: $white_colour;
@@ -68,7 +69,8 @@
             @include heading_3($main_font, $primary_colour)
         }
         .card_text{
-            @include body_copy($alt_font, $dark_colour)
+            @include body_copy($alt_font, $dark_colour);
+            text-align: justify;
         }
     }
     .card_1{
@@ -82,16 +84,47 @@
     
 }
 
-.home_services{
+.home_service{
     height: 100vh;
     width: 100%;
-    padding-top: $space_xl_48;
+    padding-top: $space_xxl_64;
     // background-color: salmon;
     
-    .home_services_container{
+    .home_service_container{
         h3{
-            @include heading_4($main_font, $primary_colour)
+            @include heading_4($main_font, $secondary_colour);
+            text-transform: uppercase;
+            padding-bottom: $space_xl_48;
         }
+
+        .home_service_cards{
+            display: grid;
+            gap: $space_l_32;
+
+            .home_service_card{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: $space_m_24;
+                .home_service_card_image{
+                    width:100%;
+                    // padding-bottom: $space_m_24;
+                }
+                .home_service_card_heading{
+                    @include heading_5($main_font, $primary_colour);
+                    max-width: 360px;
+                    // padding-bottom: $space_m_24;
+                   
+                }
+                .home_service_card_text{
+                    @include body_copy($alt_font, $dark_colour);
+                    text-align: justify;
+                }
+            }
+
+            }
+            
+        
     }
 }
 
@@ -105,7 +138,7 @@
 
 
 //Media Queries
-@media screen and (min-width: 760px) and (max-width: 1020px){
+@media screen and (min-width: 800px) and (max-width: 1020px){
 
     .home_about_cards{
         grid-template-columns: repeat(8, 1fr);  
@@ -128,6 +161,26 @@
     .card_5{
         grid-column: 5 / 9;
         border-left: 1px solid $light_colour;
+    }
+
+
+    // Home Services
+    .home_service_cards{
+        grid-template-columns: repeat(4, 1fr);
+
+        .service_card_1{
+            grid-column: 1/3 ;
+        }
+        .service_card_2{
+            grid-column: 3/5 ;
+        }
+        .service_card_3{
+            grid-column: 1/3 ;
+        }
+        .service_card_4{
+            grid-column: 3/5 ;
+        }
+       
     }
 
 }
@@ -175,6 +228,26 @@
         grid-row: 2 / 3;
         border-right: 1px solid $light_colour;
         border-left: 1px solid $light_colour;
+    }
+
+
+    .home_service_cards{
+        grid-template-columns: repeat(4, 1fr);
+        gap: $space_xxl_64;
+
+        .service_card_1{
+            grid-column: 1/3 ;
+        }
+        .service_card_2{
+            grid-column: 3/5 ;
+        }
+        .service_card_3{
+            grid-column: 1/3 ;
+        }
+        .service_card_4{
+            grid-column: 3/5 ;
+        }
+       
     }
 
 }
