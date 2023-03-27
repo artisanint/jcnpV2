@@ -141,10 +141,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        height: 100%;
         gap: $space_l_32;
-        height: 60vh;
-        padding : 0 $space_s_16 ;
+        padding : $space_xl_48 $space_s_16 ;
         background-image: url(../images/The-role-of-the-quantity-surveyor_1.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -177,10 +176,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        height: 100%;
         gap: $space_l_32;
-        height: 60vh;
-        padding : 0 $space_s_16 ;
+        padding : $space_xl_48 $space_s_16 ;
         background-image: url(../images/JCNP_home_profile_right.jpg);
         background-position: top;
         background-repeat: no-repeat;
@@ -337,7 +335,7 @@
     .home_profile{
         display: grid;
         grid-template-columns: repeat(4, 1fr );
-        height: 70vh;
+        // height: 70vh;
 
         .home_profile_left{
             grid-column: 1/3 ;
