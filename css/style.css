@@ -7,20 +7,30 @@
 
 * li {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 * a {
   text-decoration: none;
 }
 
+* ul {
+  margin: 0;
+  padding: 0;
+}
+
 /*
 Fluid Typography Scale
 Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12
+together with
+https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l&g=s,l,xl,12
 */
 .container {
-  max-width: 1440px;
+  width: clamp(250px, 99vw, 1440px);
+  height: 100%;
   margin: 0 auto;
-  padding: 0 clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+  padding: 0 48px;
 }
 
 .home_hero {
@@ -30,7 +40,6 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
   position: relative;
   align-items: center;
 }
@@ -49,7 +58,7 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
   z-index: 8;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
 }
 .home_hero .home_hero_content h3 {
   font-family: "Montserrat", sans-serif;
@@ -113,7 +122,13 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
 .home_services {
   height: 100vh;
   width: 100%;
-  background-color: salmon;
+  padding-top: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+}
+.home_services .home_services_container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
+  line-height: 120%;
+  color: #BB0722;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1020px) {
@@ -352,6 +367,6 @@ Generated from https://utopia.fyi/type/calculator?c=360,14,1.333,1440,16,1.333,5
 }
 @media screen and (max-width: 480px) {
   .container {
-    padding: 0 clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+    padding: 0 clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
   }
 }/*# sourceMappingURL=style.css.map */

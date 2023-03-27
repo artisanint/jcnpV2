@@ -6,10 +6,17 @@
    }
    *li{
     list-style: none;
+    margin: 0;
+    padding: 0;
    }
    *a{
     text-decoration: none;
    }
+   *ul{
+    margin: 0;
+    padding: 0;
+   }
+   
 
 
 //Imporing Fonts
@@ -20,9 +27,13 @@
 //Importing Components
 
 .container{
-    max-width: 1440px;
+    width: clamp(250px, 99vw, 1440px);
+    height: 100%;
     margin: 0 auto;
-    padding: 0 $space_xl_48;
+    padding: 0 48px;
+    // background-color: salmon;
+    
+   
 
    }
 
@@ -41,6 +52,6 @@
 
 @media screen and (max-width: 480px){
     .container{
-        padding:  0 $space_m_24;
+        padding:  0 $space_l_32;
     }
 }
