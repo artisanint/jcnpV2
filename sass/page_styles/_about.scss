@@ -1,0 +1,95 @@
+.page_banner{
+    height: 70vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .page_banner_overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $white_colour;
+        opacity: .7;
+        }
+        .page_banner_heading{
+            @include heading_1($main_font, $primary_colour);
+            position: relative;
+            z-index: 5;
+            text-transform: uppercase;
+        }    
+    }
+.about_banner{
+    background-image: url(../images/JCNP_About_Us_Banner.jpg);
+}
+
+/*-------SECTION ONE----------*/
+
+.about_section_1{
+    padding: $space_xxl_64 0;
+    display: grid;
+
+    .about_section_1_left{
+        .about_section_1_left_caption{
+            @include heading_4($main_font, $primary_colour);
+            padding-bottom: $space_l_32;
+            text-align: center;
+            text-transform: uppercase;
+            span{
+                color: $secondary_colour;
+            }
+        }
+        .about_section_1_left_text{
+            @include body_copy($alt_font, $dark_colour);
+            text-align: justify;
+            padding-bottom: $space_l_32;
+        }
+    
+    }
+    .about_section_1_right{
+        img{
+            width: 100%;
+        }
+    }
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Media Queries
+@media screen and (min-width: 800px) and (max-width: 1020px){
+    
+}
+
+
+@media screen and (min-width: 1021px){
+    .about_section_1{
+        .about_section_1_left_caption{
+            text-align: left !important;
+        }
+        grid-template-columns: 55% 45%;
+        gap: $space_xl_48;
+
+        
+    }
+}
