@@ -42,7 +42,7 @@
         p{
             @include body_copy($alt_font, $dark_colour);
             padding-bottom: $space_xl_48;
-            max-width: 520px;
+            max-width: 600px;
             text-align: justify;
         }
     }
@@ -135,20 +135,22 @@
 
 /*-------------------------HOME VALUES SECTION---------------------*/
 .home_profile{
-    min-height: 100vh;
+    min-height: 65vh;
     width: 100%;
+    
     .home_profile_left{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        // align-items: ;
         height: 100%;
         gap: $space_l_32;
-        padding : $space_xl_48 $space_s_16 ;
+        padding : $space_xxl_64 $space_s_16 ;
         background-image: url(../images/JCNP_Home_Profile_Left.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
+       
         
 
         .home_profile_left_caption{
@@ -160,15 +162,19 @@
 
         .home_profile_left_heading{
             @include heading_3($main_font, $primary_colour);
+            padding-top: $space_m_24;
 
         }
         .home_profile_left_text{
             @include body_copy($main_font, $white_colour);
-            max-width: 360px;
+            text-align: justify;
+            // max-width: 360px;
         }
         .home_profile_cta{
             display: flex;
             flex-direction: row;
+            gap: 12px;
+            padding-bottom: $space_s_16;
         }
     }
 
@@ -177,7 +183,7 @@
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        gap: $space_l_32;
+        // gap: $space_m_24;
         padding : $space_xl_48 $space_s_16 ;
         background-image: url(../images/JCNP_home_profile_right.jpg);
         background-position: top;
@@ -185,11 +191,13 @@
         background-size: cover;
         position: relative;
 
-        .home_profile_right_caption{
-            @include heading_3($main_font, $white_colour)
+        .home_profile_right_heading{
+            @include heading_3($main_font, $white_colour);
+            padding-bottom: $space_m_24;
         }
         .home_profile_right_text{
-            @include body_copy($main_font, $white_colour)
+            @include body_copy($main_font, $white_colour);
+            padding-bottom: $space_m_24;
         }
         .home_profile_pillars{
             li{
@@ -199,7 +207,7 @@
                 padding-bottom: $space_m_24;
                 
                 p{
-                    @include heading_5($main_font, $white_colour)
+                    @include body_copy($main_font, $white_colour)
                 }
                 .fa-solid{
                     color: white;
