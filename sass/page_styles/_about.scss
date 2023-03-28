@@ -1,5 +1,5 @@
 .page_banner{
-    height: 70vh;
+    height: 40vh;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 /*-------SECTION ONE----------*/
 
 .about_section_1{
-    padding: $space_xxl_64 0;
+    // padding: $space_xxl_64 0;
     display: grid;
     margin-top: $space_xl_48;
 
@@ -145,13 +145,7 @@
 //Media Queries
 @media screen and (min-width: 800px) and (max-width: 1020px){
     .about_section_2{
-        .container{
-            display: flex !important;
-            flex-direction: row !important;
-            .about_section_2_left{
-
-            }
-        }
+      
     }
 }
 
@@ -168,9 +162,6 @@
     }
 
     .about_section_2{
-        .container{
-            display: flex !important;
-            flex-direction: row !important;
-        }
+       
     }
 }

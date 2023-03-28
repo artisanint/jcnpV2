@@ -390,7 +390,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   }
 }
 .page_banner {
-  height: 70vh;
+  height: 40vh;
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -425,7 +425,6 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
 
 /*-------SECTION ONE----------*/
 .about_section_1 {
-  padding: clamp(3.5rem, 3.33rem + 0.74vw, 4rem) 0;
   display: grid;
   margin-top: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
 }
@@ -526,12 +525,6 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   height: 100vh;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1020px) {
-  .about_section_2 .container {
-    display: flex !important;
-    flex-direction: row !important;
-  }
-}
 @media screen and (min-width: 1021px) {
   .about_section_1 {
     grid-template-columns: 55% 45%;
@@ -539,10 +532,6 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   }
   .about_section_1 .about_section_1_left_caption {
     text-align: left !important;
-  }
-  .about_section_2 .container {
-    display: flex !important;
-    flex-direction: row !important;
   }
 }
 .primary_button {
