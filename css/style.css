@@ -427,6 +427,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
 .about_section_1 {
   padding: clamp(3.5rem, 3.33rem + 0.74vw, 4rem) 0;
   display: grid;
+  margin-top: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
 }
 .about_section_1 .about_section_1_left .about_section_1_left_caption {
   font-family: "Montserrat", sans-serif;
@@ -448,10 +449,89 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   text-align: justify;
   padding-bottom: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
 }
+.about_section_1 .about_section_1_left .about_section_1_left_cta {
+  display: none;
+  visibility: hidden;
+}
 .about_section_1 .about_section_1_right img {
   width: 100%;
 }
 
+/*-------------About Section 2---------------*/
+.about_section_2 {
+  height: 40vh;
+  width: 100%;
+}
+.about_section_2 .about_section_2_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #DDD9D9;
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+.about_section_2 .about_section_2_left h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
+  line-height: 120%;
+  color: #130c0c;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about_section_2 .about_section_2_left p {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #282828;
+  text-align: center;
+  max-width: 360px;
+}
+.about_section_2 .about_section_2_left button {
+  align-self: flex-start;
+  align-self: center;
+}
+.about_section_2 .about_section_2_right {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #130c0c;
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+.about_section_2 .about_section_2_right h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
+  line-height: 120%;
+  color: #bb0722;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about_section_2 .about_section_2_right p {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #FFFFFF;
+  text-align: center;
+}
+.about_section_2 .about_section_2_right button {
+  align-self: center;
+}
+
+.about_section_3 {
+  height: 100vh;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1020px) {
+  .about_section_2 .container {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
 @media screen and (min-width: 1021px) {
   .about_section_1 {
     grid-template-columns: 55% 45%;
@@ -459,6 +539,10 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   }
   .about_section_1 .about_section_1_left_caption {
     text-align: left !important;
+  }
+  .about_section_2 .container {
+    display: flex !important;
+    flex-direction: row !important;
   }
 }
 .primary_button {

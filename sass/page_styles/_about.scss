@@ -33,6 +33,7 @@
 .about_section_1{
     padding: $space_xxl_64 0;
     display: grid;
+    margin-top: $space_xl_48;
 
     .about_section_1_left{
         .about_section_1_left_caption{
@@ -49,6 +50,11 @@
             text-align: justify;
             padding-bottom: $space_l_32;
         }
+        .about_section_1_left_cta{
+            display: none;
+            visibility: hidden;
+        }
+
     
     }
     .about_section_1_right{
@@ -59,9 +65,69 @@
     
 }
     
+/*-------------About Section 2---------------*/
 
+.about_section_2{
 
+    height: 40vh;
+    width: 100%;
+   
 
+    .about_section_2_left{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width:100%;
+        background-color: $light_colour;
+        padding: $space_m_24;
+        h3{
+            @include heading_4($main_font, $secondary_colour);
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p{
+            @include body_copy($alt_font, $dark_colour);
+            text-align: center;
+            max-width: 360px;
+        }
+        button{
+            align-self: flex-start;
+            align-self: center;
+        }
+        
+    }
+    .about_section_2_right{
+        display: flex;
+        flex-direction: column;
+        gap: $space_m_24;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width:100%;
+        background-color: $secondary_colour;
+        padding: $space_m_24;
+        h3{
+            @include heading_4($main_font, $primary_colour);
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p{
+            @include body_copy($alt_font, $white_colour);
+            text-align: center;
+        }
+        button{
+            align-self: center;
+        }
+
+    }
+}
+
+.about_section_3{
+    height:100vh;
+}
 
 
 
@@ -78,7 +144,15 @@
 
 //Media Queries
 @media screen and (min-width: 800px) and (max-width: 1020px){
-    
+    .about_section_2{
+        .container{
+            display: flex !important;
+            flex-direction: row !important;
+            .about_section_2_left{
+
+            }
+        }
+    }
 }
 
 
@@ -91,5 +165,12 @@
         gap: $space_xl_48;
 
         
+    }
+
+    .about_section_2{
+        .container{
+            display: flex !important;
+            flex-direction: row !important;
+        }
     }
 }
