@@ -412,7 +412,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
 }
 .page_banner .about_banner_heading {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
+  font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
   line-height: 120%;
   color: #bb0722;
   position: relative;
@@ -650,7 +650,99 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   background-color: #FFFFFF;
   opacity: 0.7;
 }
-.page_banner .qs_banner_heading {
+.page_banner .blog_banner_heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
+  line-height: 120%;
+  color: #bb0722;
+  position: relative;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 70vw;
+}
+
+.blog_banner {
+  background-image: url(../images/JCNP\ Quantity\ Surveyor_Home\ Banner.jpg);
+}
+
+.blog_section_1_heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
+  line-height: 120%;
+  color: #bb0722;
+  text-transform: uppercase;
+  padding-bottom: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+}
+.blog_section_1_heading span {
+  color: #130c0c;
+}
+
+.blog_section_container {
+  display: grid;
+}
+.blog_section_container .blog_section_1_card {
+  margin-bottom: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+.blog_section_container .blog_section_1_card .blog_image {
+  width: 100%;
+  height: 100%;
+}
+.blog_section_container .blog_section_1_card .blog_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
+  line-height: 120%;
+  color: #bb0722;
+}
+.blog_section_container .blog_section_1_card .blog_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #282828;
+  text-align: justify;
+}
+.blog_section_container .blog_section_1_card .blog_details {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #282828;
+}
+
+/****************************************
+Media Queries Section
+******************************************/
+@media screen and (min-width: 800px) {
+  .blog_section_container {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+  }
+}
+.page_banner {
+  height: 50vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+}
+.page_banner .page_banner_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+}
+.page_banner .service_banner_heading {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
   line-height: 120%;
@@ -662,13 +754,16 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   max-width: 70vw;
 }
 
-.qs_banner {
+.service_banner {
   background-image: url(../images/JCNP_About_Us_Banner.jpg);
 }
-.qs_banner span {
+.service_banner span {
   color: #130c0c;
 }
 
+.service_container .service_list {
+  margin-bottom: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+}
 .service_container .service_list .service_heading {
   display: flex;
   flex-direction: row;
@@ -678,8 +773,8 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
 }
 .service_container .service_list .service_heading .service_heading_number {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
-  line-height: 120%;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 700;
@@ -701,15 +796,17 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   align-items: flex-start;
   gap: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   margin-left: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  margin-bottom: 8px;
 }
 .service_container .service_item p {
   font-family: "Open Sans", sans-serif;
   font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   line-height: 145%;
   color: #282828;
+  text-align: justify;
 }
 .service_container .service_item .fa-solid {
-  font-size: 10px;
+  font-size: 8px;
   color: #bb0722;
 }
 

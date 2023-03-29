@@ -18,7 +18,7 @@
         background-color: $white_colour;
         opacity: .7;
         }
-        .qs_banner_heading{
+        .service_banner_heading{
             @include heading_4($main_font, $primary_colour);
             position: relative;
             z-index: 5;
@@ -28,7 +28,7 @@
         }    
     }
 
-    .qs_banner{
+    .service_banner{
         background-image: url(../images/JCNP_About_Us_Banner.jpg);
         span{
             color: $secondary_colour;
@@ -37,6 +37,7 @@
     
     .service_container{
        .service_list{
+        margin-bottom: $space_l_32;
         .service_heading{
             display: flex;
             flex-direction: row;
@@ -45,7 +46,7 @@
             padding-bottom: $space_m_24;
     
             .service_heading_number{
-                @include heading_5($main_font, $white_colour);
+                @include body_copy($main_font, $white_colour);
                 text-transform: uppercase;
                 font-weight:700 ;
                 background-color: $primary_colour;
@@ -68,12 +69,14 @@
         align-items:flex-start;
         gap: $space_s_16;
         margin-left: $space_l_32;
+        margin-bottom: 8px;
         p{
             @include body_copy($alt_font, $dark_colour);
+            text-align: justify;
             
         }
         .fa-solid{
-            font-size: 10px;
+            font-size: 8px;
             color: $primary_colour;
         }
        }

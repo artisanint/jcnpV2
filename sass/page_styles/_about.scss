@@ -19,7 +19,7 @@
         opacity: .7;
         }
         .about_banner_heading{
-            @include heading_4($main_font, $primary_colour);
+            @include heading_3($main_font, $primary_colour);
             position: relative;
             z-index: 5;
             text-transform: uppercase;

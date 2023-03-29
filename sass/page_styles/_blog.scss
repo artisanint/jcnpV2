@@ -1,0 +1,87 @@
+.page_banner{
+    height: 50vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: $space_xl_48;
+    .page_banner_overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $white_colour;
+        opacity: .7;
+        }
+        .blog_banner_heading{
+            @include heading_3($main_font, $primary_colour);
+            position: relative;
+            z-index: 5;
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 70vw;
+        }    
+    }
+
+    .blog_banner{
+        background-image: url(../images/JCNP\ Quantity\ Surveyor_Home\ Banner.jpg);
+    }
+
+    .blog_section_1_heading{
+        @include heading_4($main_font, $primary_colour);
+        text-transform: uppercase;
+        padding-bottom: $space_l_32;
+        span{
+            color: $secondary_colour;
+        }
+    }
+    .blog_section_container{
+        display: grid;
+        .blog_section_1_card{
+            margin-bottom: $space_l_32;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: $space_m_24;
+            .blog_image{
+                width:100%;
+                height: 100%;
+                
+            }
+
+            .blog_title{
+                @include heading_5($main_font, $primary_colour);
+                // padding-bottom: $space_m_24;
+            }
+            .blog_text{
+                @include body_copy($main_font, $dark_colour);
+                // padding-bottom: $space_m_24;
+                text-align: justify;
+            }
+            .blog_details{
+                @include body_copy($main_font, $dark_colour);
+                // padding-bottom: $space_m_24;
+            }
+        }
+    }
+
+
+
+
+
+    /****************************************
+    Media Queries Section
+    ******************************************/
+    @media screen and (min-width: 800px){
+        .blog_section_container{
+            grid-template-columns: 1fr 1fr;
+            gap:$space_xl_48;
+        }
+    }
+
+    
