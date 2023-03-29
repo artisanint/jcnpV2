@@ -573,6 +573,10 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
   line-height: 145%;
   color: #282828;
 }
+.about_section_3 .about_section_3_container img.team_img {
+  width: 100%;
+  height: 100%;
+}
 
 @media screen and (min-width: 800px) and (max-width: 1020px) {
   .about_section_2_container {
@@ -590,6 +594,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+    margin-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   }
 }
 @media screen and (min-width: 1021px) {
@@ -620,6 +625,7 @@ https://utopia.fyi/type/calculator/?c=360,14,1.2,1440,16,1.333,5,2,&s=0.75%7C0.5
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+    margin-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   }
 }
 .primary_button {
