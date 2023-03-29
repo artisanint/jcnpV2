@@ -49,7 +49,7 @@
             align-items: flex-start;
             gap: $space_m_24;
             .blog_image{
-                width:100%;
+                width: 100%;
                 height: 100%;
                 
             }
@@ -82,6 +82,15 @@
             grid-template-columns: 1fr 1fr;
             gap:$space_xl_48;
         }
+
+        .blog_image{
+            width: 70% !important;
+            height: 70% !important;
+            
+        }
+
+
+        
     }
 
     
