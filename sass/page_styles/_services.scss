@@ -1,0 +1,80 @@
+.page_banner{
+    height: 50vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: $space_xl_48;
+    .page_banner_overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $white_colour;
+        opacity: .7;
+        }
+        .qs_banner_heading{
+            @include heading_4($main_font, $primary_colour);
+            position: relative;
+            z-index: 5;
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 70vw;
+        }    
+    }
+
+    .qs_banner{
+        background-image: url(../images/JCNP_About_Us_Banner.jpg);
+        span{
+            color: $secondary_colour;
+        }
+    }
+    
+    .service_container{
+       .service_list{
+        .service_heading{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: $space_s_16;
+            padding-bottom: $space_m_24;
+    
+            .service_heading_number{
+                @include heading_5($main_font, $white_colour);
+                text-transform: uppercase;
+                font-weight:700 ;
+                background-color: $primary_colour;
+                padding: 6px;
+                border-radius: 4px;
+                
+            }
+            .service_heading_text{
+                @include heading_5($main_font, $primary_colour);
+                text-transform: uppercase;
+                font-weight:700 ;
+                
+                
+            }
+           } 
+       }
+       .service_item{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        gap: $space_s_16;
+        margin-left: $space_l_32;
+        p{
+            @include body_copy($alt_font, $dark_colour);
+            
+        }
+        .fa-solid{
+            font-size: 10px;
+            color: $primary_colour;
+        }
+       }
+    }

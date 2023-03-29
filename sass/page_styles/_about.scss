@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-bottom: $space_l_32;
     .page_banner_overlay{
         position: absolute;
         top: 0;
@@ -17,8 +18,8 @@
         background-color: $white_colour;
         opacity: .7;
         }
-        .page_banner_heading{
-            @include heading_1($main_font, $primary_colour);
+        .about_banner_heading{
+            @include heading_4($main_font, $primary_colour);
             position: relative;
             z-index: 5;
             text-transform: uppercase;
