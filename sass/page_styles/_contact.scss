@@ -1,0 +1,143 @@
+.page_banner{
+    height: 50vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: $space_xl_48;
+    .page_banner_overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $white_colour;
+        opacity: .7;
+        }
+        .page_banner_heading{
+            @include heading_3($main_font, $primary_colour);
+            position: relative;
+            z-index: 5;
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 70vw;
+        }    
+    }
+
+    .contact_banner{
+        background-image: url(/images/JCNP_Image.png);
+    }
+
+    .contact_section_1{
+        h2{
+            @include heading_4($main_font, $primary_colour);
+            text-transform: uppercase;
+            padding-bottom: $space_l_32;
+            span{
+                color: $secondary_colour;
+            }
+        }
+
+        .contact_section_1_details{
+            display: grid;
+            gap: $space_l_32;
+            margin-bottom: $space_xl_48;
+            .address{
+                
+                h3{
+                    @include heading_5($main_font, $primary_colour);
+                    padding-bottom: $space_s_16;
+                }
+                p{
+                    @include body_copy($main_font, $dark_colour);
+                    padding-bottom: $space_s_16;
+                }
+            }
+            .contact_map{
+                a{
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .contact_section_2 {
+        h3{
+            @include heading_5($main_font, $primary_colour);
+            padding-bottom:$space_m_24 ;
+            span{
+                color: $secondary_colour;
+            }
+        }
+       
+    }
+
+    form{
+        width: 100%;
+        .input_grid{
+            display: grid;
+        }
+        .input_group{
+            margin-bottom: $space_s_16;
+            label{
+                @include body_copy($main_font, $dark_colour);
+                display: block;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            input{
+                
+                width: 100%;
+                padding: $space_s_16 8px;
+            }
+            textarea{
+                width: 100%;
+                padding: $space_s_16 8px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************
+Media Queries
+*************************************/
+@media screen and (min-width: 800px) and (max-width: 1020px){
+    .contact_section_1_details{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1021px){
+    .contact_section_1_details{
+        grid-template-columns: 1fr 1fr;
+    }
+    .input_grid{
+        grid-template-columns: 1fr 1fr;
+        gap: $space_xl_48;
+    }
+
+}

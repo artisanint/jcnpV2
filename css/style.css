@@ -814,7 +814,7 @@ Media Queries Section
   color: #bb0722;
 }
 
-.post_banner {
+.page_banner {
   height: 50vh;
   width: 100%;
   background-position: center center;
@@ -826,7 +826,7 @@ Media Queries Section
   position: relative;
   margin-bottom: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
 }
-.post_banner .post_banner_overlay {
+.page_banner .page_banner_overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -835,7 +835,137 @@ Media Queries Section
   background-color: #FFFFFF;
   opacity: 0.7;
 }
-.post_banner .post_banner_heading {
+.page_banner .page_banner_heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
+  line-height: 120%;
+  color: #bb0722;
+  position: relative;
+  z-index: 5;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 70vw;
+}
+
+.contact_banner {
+  background-image: url(/images/JCNP_Image.png);
+}
+
+.contact_section_1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.56rem, 1.48rem + 0.33vw, 1.78rem);
+  line-height: 120%;
+  color: #bb0722;
+  text-transform: uppercase;
+  padding-bottom: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+}
+.contact_section_1 h2 span {
+  color: #130c0c;
+}
+.contact_section_1 .contact_section_1_details {
+  display: grid;
+  gap: clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
+  margin-bottom: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+}
+.contact_section_1 .contact_section_1_details .address h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
+  line-height: 120%;
+  color: #bb0722;
+  padding-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+.contact_section_1 .contact_section_1_details .address p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #282828;
+  padding-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+.contact_section_1 .contact_section_1_details .contact_map a {
+  cursor: pointer;
+}
+.contact_section_1 .contact_section_1_details .contact_map a img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact_section_2 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.17rem, 1.11rem + 0.25vw, 1.33rem);
+  line-height: 120%;
+  color: #bb0722;
+  padding-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+.contact_section_2 h3 span {
+  color: #130c0c;
+}
+
+form {
+  width: 100%;
+}
+form .input_grid {
+  display: grid;
+}
+form .input_group {
+  margin-bottom: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+}
+form .input_group label {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+  line-height: 145%;
+  color: #282828;
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+form .input_group input {
+  width: 100%;
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) 8px;
+}
+form .input_group textarea {
+  width: 100%;
+  padding: clamp(0.88rem, 0.83rem + 0.19vw, 1rem) 8px;
+}
+
+/****************************
+Media Queries
+*************************************/
+@media screen and (min-width: 800px) and (max-width: 1020px) {
+  .contact_section_1_details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1021px) {
+  .contact_section_1_details {
+    grid-template-columns: 1fr 1fr;
+  }
+  .input_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+  }
+}
+.page_banner {
+  height: 50vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: clamp(2.63rem, 2.5rem + 0.56vw, 3rem);
+}
+.page_banner .post_banner_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+}
+.page_banner .post_banner_heading {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2.07rem, 1.97rem + 0.44vw, 2.37rem);
   line-height: 120%;
@@ -848,7 +978,7 @@ Media Queries Section
 }
 
 .post_banner {
-  background-image: url(../images/JCNP_Blog.jpg);
+  background-image: url(/images/JCNP_Image.png);
 }
 
 .post_section_container {
@@ -872,6 +1002,7 @@ Media Queries Section
   font-size: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
   line-height: 145%;
   color: #282828;
+  text-align: justify;
 }
 
 /*****************

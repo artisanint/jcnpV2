@@ -1,4 +1,4 @@
-.post_banner{
+.page_banner{
     height: 50vh;
     width: 100%;
     background-position: center center;
@@ -29,7 +29,7 @@
     }
 
     .post_banner{
-        background-image: url(../images/JCNP_Blog.jpg);
+        background-image: url(/images/JCNP_Image.png);
     }
 
     .post_section_container{
@@ -52,6 +52,7 @@
 
         .post_body{
             @include body_copy($alt_font, $dark_colour);
+            text-align: justify;
         }
     }
 
