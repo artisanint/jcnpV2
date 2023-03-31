@@ -72,6 +72,7 @@
     }
 
     .contact_section_2 {
+        margin-bottom: $space_m_24;
         h3{
             @include heading_5($main_font, $primary_colour);
             padding-bottom:$space_m_24 ;

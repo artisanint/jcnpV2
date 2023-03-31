@@ -8,9 +8,9 @@ const mobile_btn = document.querySelector('.mobile_btn');
 
 
 let tl = gsap.timeline({defaults:{reversed: true}});
-let tl2 = gsap.timeline({defaults:{reversed: true}, paused: true});
+let tl2 = gsap.timeline({defaults:{reversed: true}});
 
-tl.to('.drop_down',{opacity: 1,height:"200px",duration: 0.5});
+tl.to('.drop_down',{opacity: 1,height:"200px",visibility: 'visible',duration: 0.5});
 tl2.to('nav',{y:0,duration: 0.5});
 
 drop_down_btn.addEventListener("click", function (){
