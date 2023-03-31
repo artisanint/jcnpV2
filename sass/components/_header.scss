@@ -132,15 +132,15 @@ header{
                         position: absolute;
                         top: $space_xl_48;
                         left: -64px;
-                        min-width: 340px;
+                        width: 0;
                         height: 0;
+                        visibility: none;
                         opacity: 0;
+                        transform: translateY(-10px);
                         background-color: $secondary_colour;
                         z-index: 100;
                         padding: 0  $space_l_32  $space_l_32 $space_l_32 ;
-                        .drop_down_item{
-
-                        }
+                       
                     }
             }
         }
@@ -206,7 +206,7 @@ header{
                     position: relative  !important;
                     top: 0 !important;
                     left: 0!important;
-                    min-width: 100px !important;
+                    // min-width: 100px !important;
                     z-index: 100;
                     // opacity: 0 !important;
                     // height: 0 !important;

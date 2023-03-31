@@ -1,0 +1,90 @@
+footer{
+    background-color: $secondary_colour;
+    padding: $space_l_32 0px;
+
+
+}
+
+.footer_groups{
+    display: grid;
+}
+
+.footer_group_container{
+    padding-bottom: $space_m_24;
+    .footer_group_heading{
+        @include heading_5($main_font, $primary_colour);
+        padding-bottom: $space_s_16;
+    }
+
+    .group_item{
+        padding-bottom: $space_s_16;
+        a{
+            @include body_copy($alt_font, $white_colour);
+            
+            transition: all ease 0.5s;
+            &:hover{
+                    color: $primary_colour;
+            }
+        } 
+        p{
+            @include body_copy($alt_font, $white_colour);
+            
+        }
+        .fa-solid,.fa-brands{
+            color: $primary_colour;
+        }
+    }
+    
+    
+    .contact_item{
+        display: flex;
+        flex-direction: row;
+        gap: $space_s_16;
+        align-items: center;
+    }
+
+    
+}
+
+.footer_logo{
+        
+    img{
+        height: 82px;
+    }
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////Media Queries
+
+@media screen and (min-width: 800px) and (max-width: 1020px){
+    
+    .footer_groups{
+        grid-template-columns: 1fr 1fr;
+        gap: $space_xl_48;
+    }
+    .footer_logo{
+        display: flex ;
+        justify-content: flex-start;
+        align-items: center;
+        // background-color: salmon;
+        margin-top: $space_xxl_64;
+        img{
+            height: 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 1021px){
+    .footer_groups{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: $space_xl_48;
+    }
+    .footer_logo{
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
