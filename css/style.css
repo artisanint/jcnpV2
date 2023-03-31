@@ -159,7 +159,6 @@ header .fa-solid {
   height: 0;
   visibility: none;
   opacity: 0;
-  transform: translateY(-10px);
   background-color: #130c0c;
   z-index: 100;
   padding: 0 clamp(1.75rem, 1.67rem + 0.37vw, 2rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem) clamp(1.75rem, 1.67rem + 0.37vw, 2rem);
@@ -1120,7 +1119,7 @@ Media Queries Section
 }
 
 .contact_banner {
-  background-image: url(/images/JCNP_Image.png);
+  background-image: url(../images/JCNP_Image.png);
 }
 
 .contact_section_1 h2 {
@@ -1253,7 +1252,7 @@ Media Queries
 }
 
 .post_banner {
-  background-image: url(/images/JCNP_Image.png);
+  background-image: url(../images/JCNP_Image.png);
 }
 
 .post_section_container {
