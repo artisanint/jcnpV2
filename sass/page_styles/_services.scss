@@ -81,3 +81,9 @@
         }
        }
     }
+
+  .service .service_buttons{
+    display: flex;
+    flex-direction:row;
+    gap: $space_xl_48;
+  }
