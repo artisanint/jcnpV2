@@ -54,6 +54,7 @@
         .post_body{
             @include body_copy($alt_font, $dark_colour);
             text-align: justify;
+            
         }
     }
 

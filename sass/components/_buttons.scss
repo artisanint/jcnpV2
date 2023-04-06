@@ -176,8 +176,6 @@
 
 
 .primary_text_button{
-    
-    gap: $space_xs_12;
     border: none;
     padding: $space_s_16 0;
     background-color: transparent;
@@ -186,12 +184,45 @@
         @include button_text($alt_font);
         color: $primary_colour;
         font-weight: 600;
-        
-        .fa-solid{
-            padding: 0 $space_m_24;
+    }
+    i.fa-solid{
+        padding: 0 10px;
+        font-size: $space_s_16;
+        color: $primary_colour;
+        transition: all ease 0.3s;
+    }
+   &:hover{
+        a{
+            color: $secondary_colour;
         }
+        i.fa-solid{
+            // padding: 0 $space_xs_12;
+            color: $secondary_colour;
+        }
+   }
+}
+
+.text_button_inactive{
+    border: none;
+    padding: $space_s_16 0;
+    background-color: transparent;
+    pointer-events: none;
+    opacity: 0.5;
+
+    a{
+
+        @include button_text($alt_font);
+        color: $primary_colour;
+        font-weight: 600;
+    }
+    i.fa-solid{
+        padding: 0 10px;
+        font-size: $space_s_16;
+        color: $primary_colour;
+        transition: all ease 0.3s;
     }
 }
+
 
 
 // Media Queries 
